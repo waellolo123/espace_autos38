@@ -5,6 +5,12 @@
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(240, 240, 240);
+  background: url(assets/engine2.png);
+}
+.link {
+  text-decoration: none;
+  color: inherit;
 }
 /* *******************navbar */
 nav {
@@ -16,6 +22,7 @@ nav {
   position: fixed;
   top: 0;
   z-index: 100;
+  box-shadow: 1px 1px 8px lightgray;
 }
 .navbar {
   width: 90%;
@@ -23,6 +30,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 .nav-list {
   display: flex;
@@ -60,11 +68,28 @@ nav {
   height: 100px;
   object-fit: cover;
 }
+.hamburger {
+  color: crimson;
+  font-size: 2em;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  visibility: hidden;
+}
+.close {
+  color: crimson;
+  font-size: 2em;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  visibility: hidden;
+}
+
 /* *********************** section1 ****************************** */
 .section1 {
   width: 100%;
+  margin-top: 100px;
   height: 100vh;
-  /* background: url(assets/stylish-elegant-woman-car-salon.jpg); */
   background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.519)), url(/assets/young-family-buying-car-car-showroom.jpg);
   background-position: center;
   background-size: cover;
@@ -73,6 +98,36 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+.bande {
+  width: 100%;
+  padding: 20px 0;
+  background-color: crimson;
+  position: absolute;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+}
+.bande-title {
+  color: white;
+}
+.bande-para {
+  color: white;
+}
+.bande-icon {
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+.bande-btn {
+  border: none;
+  padding: 10px;
+  background-color: white;
+  color: crimson;
+  border-radius: 3px;
+  cursor: pointer;
 }
 .section1-title {
   color: white;
@@ -94,7 +149,7 @@ nav {
 .section1-btn {
   margin-top: 20px;
   padding: 20px 60px;
-  font-size: 1.5em;
+  font-size: 1.2em;
   border: none;
   color: white;
   background-color: crimson;
@@ -124,7 +179,7 @@ nav {
 /* **************setction 2 ************************ */
 .section2 {
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  
 }
 .section2-title {
   color: lightgray;
@@ -134,12 +189,11 @@ nav {
 }
 .section2-container {
   width: 100%;
-  height: 100vh;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
 .cards {
   display: flex;
@@ -190,32 +244,37 @@ nav {
 }
 /***************************** section 3 **************************/
 .section3 {
+  margin-top: 50px;
   width: 100%;
-  margin: auto;
-  height: 100vh;
-  background: url(assets/mustang-1703538.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
 }
-.section3-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.628);
-  
+.section3-top{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section3-top img {
+  width: 60%;
+  margin: 0;
+}
+.section3-bottom{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section3-para {
-  color: white;
-  width: 70%;
+  color: lightgray;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.2em;
   line-height: 2em;
   z-index: 10;
 }
@@ -225,10 +284,278 @@ nav {
 }
 /***************************** section 4 **************************/
 .section4 {
+  margin-top: 150px;
+  width: 100%;
+}
+.depannage {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.depannage-left {
+  width: 40%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.depannage-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.depannage-img1{
+  width: 80%;
+}
+.depannage-title {
+  color: crimson;
+  text-align: center;
+}
+.depannage-para {
+  margin: 10px 0;
+  color: gray;
+  line-height: 1.5em;
+}
+.depannage-img2 {
+  width: 60%;
+}
+/* **************************** section 5 ************************ */
+.section5 {
   width: 100%;
   height: 100vh;
 }
+/* **************************** footer ************************ */
+.footer {
+  width: 100%;
+  padding: 50px;
+  background-color: rgb(255, 255, 255);
+  border-top: 1px solid lightgray;
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.footer-link {
+  list-style-type: none;
+}
+.footer-link a {
+  text-decoration: none;
+  color: lightgray;
+  cursor: pointer;
+}
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.icons {
+  display: flex;
+  gap: 10px;
+}
+.social-title {
+  color: crimson;
+}
+.footer-icon {
+  color: crimson;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.adress {
+  color: lightgray;
+}
+.griffe {
+  margin-top: 10px;
+  text-align: center;
+  font-size: .9em;
+  color: crimson;
+}
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-img {
+  width: 250px;
+}
+.footer-slogan {
+  color: lightgray;
+}
+/* **************************** contact page ************************ */
+.section-contact {
+  padding: 50px;
+}
+.contact-container {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.contact-form {
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 1px 1px 8px lightgray;
+}
+form h2 {
+  color: lightgray;
+}
+.form-group {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+input {
+  margin-top: 5px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid lightgray;
+}
+::placeholder {
+  color: lightgray;
+  opacity: .5;
+}
+label {
+  color: crimson;
+}
+textarea {
+  margin-top: 5px;
+  outline: none;
+}
+select {
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid crimson;
+  color: crimson;
+}
+form button {
+  padding: 10px;
+  border: 1px solid crimson;
+  background-color: rgb(255, 255, 255);
+  color: crimson;
+}
+/* **************************** Media queries ************************ */
+@media screen and (max-width: 1100px) {
+  .section1-title {
+    font-size: 3em;
+  }
+  .section1-slogan {
+    margin: 5px 0;
+    font-size: 1.2em;
+  }
+  .section1-btn {
+    padding: 15px 40px;
+    font-size: 1em;
+  }
+  .section2-container {
+    height: auto;
+  }
+  .section2-title {
+    font-size: 2em;
+  }
+  .section3-bottom {
+    width: 90%;
+  }
+  .section3-para {
+    font-size: 1em;
+  }
+  .depannage {
+    flex-direction: column;
+  }
+  .depannage-left {
+    width: 80%;
+  }
+  .depannage-right {
+    width: 80%;
+  }
+  .location {
+    flex-direction: column-reverse;
+  }
+}
 
+@media screen and (max-width: 1000px) {
+
+  .nav-list {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.804);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: -100%;
+    transition: .5s ease;
+  }
+  .show-nav {
+    left: 0;
+  }
+  .hamburger {
+    visibility: visible;
+  }
+  .bande {
+    display: none;
+  }
+  .depannage {
+    padding: 0;
+  }
+  .contact-form {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .section1-title {
+    font-size: 2.5em;
+  }
+  .section1-slogan {
+    font-size: 1em;
+  }
+  .section2-title {
+    font-size: 2em;
+  }
+  .section3-para {
+    font-size: 1em;
+  }
+  .depannage {
+    gap: 10px;
+  }
+  .depannage-para {
+    width: 100%;
+  }
+  .depannage-title {
+    font-size: 1.2em;
+  }
+  .location {
+    margin-top: 50px;
+  }
+  .contact-container {
+    padding: 0px;
+  }
+  .contact-form {
+    width: 100%;
+  }
+}
 
 
 

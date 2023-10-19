@@ -11,7 +11,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
+} 
 .link {
   text-decoration: none;
   color: inherit;
@@ -111,6 +111,7 @@ nav {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+  mix-blend-mode: overlay;
 }
 .bande {
   width: 100%;
@@ -144,6 +145,10 @@ nav {
 .section1-title {
   color: white;
   font-size: 6em;
+  background-color: rgba(255, 255, 255, 0.365);
+  padding: 10px 20px;
+  border-radius: 3px;
+  margin-bottom: 10px;
 
 }
 .title-gray {

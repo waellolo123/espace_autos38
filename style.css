@@ -405,18 +405,30 @@ nav {
   margin-top: 100px;
   width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 50px;
 }
 .contact-form {
-  width: 50%;
+  width: 40%;
   padding: 30px;
   display: flex;
   flex-direction: column;
   background-color: white;
   box-shadow: 1px 1px 8px lightgray;
+}
+.texts-contact {
+  width: 40%;
+}
+.title-contact {
+  color: crimson;
+}
+.para-contact {
+  margin-top: 10px;
+  color: gray;
+  line-height: 1.5em;
+  
 }
 form h2 {
   color: lightgray;
@@ -470,6 +482,7 @@ form button {
   }
   .section2-container {
     height: auto;
+
   }
   .section2-title {
     font-size: 2em;
@@ -492,6 +505,19 @@ form button {
   .location {
     flex-direction: column-reverse;
   }
+  .section-contact {
+    padding: 20px;
+  }
+  .contact-container {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .texts-contact {
+    width: 90%;
+  }
+  .contact-form {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -505,6 +531,7 @@ form button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 1.2em;
     bottom: 0;
     left: -100%;
     transition: .5s ease;

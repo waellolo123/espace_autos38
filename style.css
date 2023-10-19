@@ -90,7 +90,7 @@ nav {
   width: 100%;
   margin-top: 100px;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.519)), url(/assets/garage.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.519)), url(/assets/IMG-20231003-WA0000.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -273,7 +273,7 @@ nav {
 }
 
 .section3-para {
-  color: lightgray;
+  color: gray;
   text-align: center;
   font-size: 1.2em;
   line-height: 2em;
@@ -400,6 +400,10 @@ nav {
 /* **************************** contact page ************************ */
 .section-contact {
   padding: 50px;
+  background: linear-gradient(rgba(255, 255, 255, 0.901),rgba(255, 255, 255, 0.934)), url(/assets/garage2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .contact-container {
   margin-top: 100px;
